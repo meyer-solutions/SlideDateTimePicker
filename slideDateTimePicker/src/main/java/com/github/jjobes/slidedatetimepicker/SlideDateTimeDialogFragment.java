@@ -105,6 +105,10 @@ public class SlideDateTimeDialogFragment extends DialogFragment implements DateF
         return dialogFragment;
     }
 
+    public ViewPagerAdapter viewPagerAdapter() {
+        return mViewPagerAdapter;
+    }
+
     @Override
     public void onAttach(Activity activity)
     {

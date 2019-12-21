@@ -369,6 +369,7 @@ public class SlideDateTimeDialogFragment extends DialogFragment implements DateF
         {
             super(fm);
         }
+        public boolean hideTimePicker = true;
 
         @Override
         public Fragment getItem(int position)
@@ -402,7 +403,7 @@ public class SlideDateTimeDialogFragment extends DialogFragment implements DateF
         @Override
         public int getCount()
         {
-            return 2;
+            return hideTimePicker ? 1 : 2;
         }
     }
 }
